@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+}
+nav{
+    background-color: #F6F6F6;
+    height: 131px;;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li {
+    float: left;
+}
+nav li a {
+    display: inline-block;
+    color: #43525A;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav li a:hover {
+    position: relative;
+    top: -10px;
+}
+.nav-menu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.14rem;
+    width: 40%;
+    float: left;
+    padding: 20px 0px 20px 0px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.logo-top{
+    width: 20%;
+    float: left;
+    text-align: center;   
+}
+.logo-top img{
+    height: 6rem;
+}
+.nav-separator{
+    float: left;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: inline-block;
+    width: 1px;
+    background-color: #43525A;
+    margin: 0 0.7rem;
+    height: 2.1rem;
+    margin-top: 25px;
+} 
+.marked-content{
+    margin-left: 40px;
+    margin-right: 40px; 
+}
+.marked-content.left{
+    margin: 0;
+    height: fit-content;
+    width: 50%;
+    background-image: linear-gradient(90deg, #37302C 0%, #0D0D12 100%);  
+}
+.marked-content.right{
+    text-align: right;
+    margin: 0;
+    height: fit-content;
+    width: 50%;
+    background-color: #DDE3E7;
+    overflow: hidden; 
+}
+.right{
+    margin-right: 40px;
+}
+.marked-content.title{
+    font-family: "Muli", sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+.marked-content.text{
+    font-size: 1.1rem;
+    margin-top: 1.4rem;
+    font-family: "Muli", sans-serif;
+    font-weight: 400;
+    line-height: 160%;
+    margin-left: 40px;
+}
+.marked-content.price{
+    margin:0;
+    font-size: 1.5rem;
+}
+.whiteText{
+    color: white;
+}
+.blackText{
+    color: #43525A;
+}
+.marked-content button{
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 134px;
+    height: 50px;
+    margin-top: 20px; 
+    font-size: 1.2rem;
+    color: white;
+    background-color: #28A5BE;
+}
+.marked-content button:hover{
+    cursor: pointer;
+    background-color: #1b6e7f
+}
+#btnRight{
+    margin-bottom: 88px;
+}
