@@ -62,15 +62,19 @@ nav li a:hover {
     margin-right: 40px; 
 }
 .marked-content.left{
+    position: relative;
+    overflow: hidden;
     margin: 0;
-    height: fit-content;
+    height: 60rem;
     width: 50%;
     background-image: linear-gradient(90deg, #37302C 0%, #0D0D12 100%);  
 }
 .marked-content.right{
+    position: relative;
+    overflow: hidden;
     text-align: right;
     margin: 0;
-    height: fit-content;
+    height: 60rem;
     width: 50%;
     background-color: #DDE3E7;
     overflow: hidden; 
