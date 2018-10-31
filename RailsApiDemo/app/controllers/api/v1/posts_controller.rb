@@ -4,7 +4,11 @@ module Api
 
             def index
                 @posts = Post.order('created_at DESC') 
-                render json: @posts
+                if @posts
+                    render json: @posts
+                else 
+                    render json: @posts.errors, status: :unprocessable_entity
+                end
             end
 
             def destroy
@@ -17,6 +21,13 @@ module Api
             end
 
             def show
+                @post = Post.find(params[:id]) 
+                if @post
+                    render json: @post
+                else 
+                    render json: @post.errors, status: :unprocessable_entity
+                end
+                
             end
 
         end
