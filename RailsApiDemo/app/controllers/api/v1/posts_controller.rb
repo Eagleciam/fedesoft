@@ -13,9 +13,16 @@ module Api
 
             def destroy
             end
-
+REVISAR
             def create
-                
+                if @user=User.find_by("name": "Maria")
+                    @user.posts.new(posts_params)
+                @post= ¨Post.new(post_params)
+                if @post.save
+                    render status: :created
+                else 
+                    render json: @post.errors, 
+                    status: :unprocessable_entity
             end
 
             def update
