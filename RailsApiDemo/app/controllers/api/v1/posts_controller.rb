@@ -17,7 +17,7 @@ REVISAR
             def create
                 if @user=User.find_by("name": "Maria")
                     @user.posts.new(posts_params)
-                @post= ¨Post.new(post_params)
+                @post= Post.new(post_params)
                 if @post.save
                     render status: :created
                 else 
@@ -38,6 +38,10 @@ REVISAR
                 
             end
 
+            private 
+              def post_params
+                params.require(:user).permit(:title, :body, )
+              end  
         end
     end
 end
